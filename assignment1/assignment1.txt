@@ -24,4 +24,4 @@
 9. OS Version: 8.6 (Ootpa)
    File: /etc/os-release
 
-10. Permission: lrwxrwxrwx
+i10. Permission: lrwxrwxrwx

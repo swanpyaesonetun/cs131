@@ -1,0 +1,27 @@
+2. Command: echo $SHELL
+   Output: /bin/bash
+
+2. Command: echo $HOME
+   Output: /mnt/scratch/SP24_CS131_Jyotika/swansp24
+
+3. Command: id -u
+   Output: 1223
+
+   Command: id -Gn
+   Output: swansp24 S78
+
+4. Command: mkdir myDir
+	    chmod u-w myDir
+   Yes, I'm allowed to cd, ls and  ls -l but I can't create file without the write permission
+
+5. Command: mkdir myDir2 myDir3
+
+6. Command: touch myDir2/myFile.txt
+            mv myDir2/myFile.txt myDir3/
+
+6. Total Memory: 71367 mebibytes
+
+9. File: /etc/os-release
+
+10. OS Version: 8.6 (Ootpa)
+    Permission: lrwxrwxrwx

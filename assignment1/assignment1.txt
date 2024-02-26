@@ -1,3 +1,5 @@
+1. Command: mkdir assignment1
+
 2. Command: echo $SHELL
    Output: /bin/bash
 

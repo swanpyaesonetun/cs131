@@ -21,7 +21,7 @@
 
 6. Total Memory: 71367 mebibytes
 
-9. File: /etc/os-release
+9. OS Version: 8.6 (Ootpa)
+   File: /etc/os-release
 
-10. OS Version: 8.6 (Ootpa)
-    Permission: lrwxrwxrwx
+10. Permission: lrwxrwxrwx

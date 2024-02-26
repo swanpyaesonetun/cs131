@@ -417,4 +417,4 @@
   417  cat /etc/os-release (Question 9)
   418  ls -l /etc/os-release (Question 10)
   419  ls
-  i420  history > cmds.log
+  420  history > cmds.log

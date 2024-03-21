@@ -1,0 +1,45 @@
+Q1:
+a. The command is searching for all the files within the '/etc' directory and its subdirectories. The results are redirected to 'one.txt'. Any errors encountered during the search are redirected to 'two.txt'.
+b. In one.txt, I saw a list of file paths that were successfully found. In two.txt, I saw errors related to permission issues encountered during the search.
+
+Q2:
+Command: cut -d',' -f20,21 Global\ YouTube\ Statistics.csv | sort | uniq -c | sort -nr | head -3
+Used cut to extract the columns for the created year and month.
+Sorted this information.
+Used uniq -c to count the unique occurrences.
+Sorted again in descending order to find the top counts.
+Used head to get the top 3.
+
+Q3:
+Command: ps -u $swansp24
+Output:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+swansp24 3970903  0.0  0.0  19648  7296 pts/17   Ss   20:52   0:00 -bash
+swansp24 4001380  0.0  0.0  25344  8000 pts/17   R+   22:17   0:00 ps -u
+
+Q4:
+Part 1
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+swansp24 3970903  0.0  0.0  19648  7296 pts/17   Ss   20:52   0:00 -bash
+swansp24 4005646  0.0  0.0  26240 11776 pts/17   S+   22:30   0:00 vim file.txt
+swansp24 4006078  0.0  0.0  19648  6912 pts/1    Ss   22:30   0:00 -bash
+swansp24 4006165  0.0  0.0  25344  8000 pts/1    R+   22:30   0:00 ps -u
+
+Observation: I noticed that two extra processes from Q3. The new processes are for vim and second terminal.
+Vim Process ID: 4005646
+
+Part 2
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+swansp24 3970903  0.0  0.0  19648  7296 pts/17   Ss+  20:52   0:00 -bash
+swansp24 4006078  0.0  0.0  19648  7360 pts/1    Ss   22:30   0:00 -bash
+swansp24 4006426  0.0  0.0  25344  8000 pts/1    R+   22:31   0:00 ps -u
+
+Observation: I noticed that with vim closed, the command no longer include the vim process.
+
+Q5:
+The init process, also known as systemd in many modern Linux distributions, is the first process that starts upon boot and is responsible for starting system services and processes.
+
+Command: ps -e | grep systemd | awk '{print $1}'
+
+Q6:
+The command ps aux is used to display information about all running processes, regardless of the owner, including processes not attached to a terminal. The output includes the user ID that owns the process, CPU and memory usage, process ID, parent process ID, process start time, controlling terminal, CPU time used, and the command that initiated the process. This command is useful for monitoring and managing system processes.

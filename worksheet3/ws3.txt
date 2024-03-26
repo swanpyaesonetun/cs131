@@ -1,0 +1,9 @@
+Task 1 - Highest Monthly Earners
+DaFuq!?Boom!,United States,9200000
+Woody & Kleiny,United Kingdom,2000000
+T-Series,India,9000000
+
+Task 2 - Highest Subscribed Channels
+WWE,96000000,Sports
+Cocomelon - Nursery Rhymes,162000000,Education
+MrBeast,166000000,Entertainment

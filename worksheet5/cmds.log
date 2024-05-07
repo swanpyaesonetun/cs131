@@ -1,0 +1,77 @@
+  990  mkdir worksheet5
+  991  cd worksheet5
+  992  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+  993  ls
+  994  vi script.sh
+  995  chmod +x script.sh
+  996  ls
+  997  ./script.sh
+  998  chmod +x script.sh
+  999  ls
+ 1000  vi ws5.txt
+ 1001  ls
+ 1002  vi script.sh
+ 1003  ./script.sh
+ 1004  touch music.txt
+ 1005  touch entertainment.txt
+ 1006  touch gaming.txt
+ 1007  touch comedy.txt
+ 1008  ./script.sh
+ 1009  vi music.txt
+ 1010  vi gaming.txt
+ 1011  vi script.sh
+ 1012  ls
+ 1013  cd ..
+ 1014  ls
+ 1015  rmdir worksheet5
+ 1016  cd worksheet5
+ 1017  ls
+ 1018  rm comedy.txt
+ 1019  rm entertainment.txt
+ 1020  rm gaming.txt
+ 1021  rm music.txt
+ 1022  rm ws5.txt
+ 1023  vi script.sh
+ 1024  ./script.sh
+ 1025  ls
+ 1026  mkdir United States
+ 1027  ls
+ 1028  rmdir States
+ 1029  rmdir United
+ 1030  rmdir "United States"
+ 1031  mkdir "United States"
+ 1032  cd United States
+ 1033  ls
+ 1034  rmdir 'United States'
+ 1035  mkdir 'United States'
+ 1036  ls
+ 1037  cd United States
+ 1038  cd 'United States'
+ 1039  touch Music.txt
+ 1040  touch Entertainment.txt
+ 1041  touch Gaming.txt
+ 1042  touch Comedy.txt
+ 1043  cd ..
+ 1044  ./script.sh
+ 1045  ls
+ 1046  vi ws5.txt
+ 1047  vi script.sh
+ 1048  ./script.sh
+ 1049  vi script.sh
+ 1050  ./script.sh
+ 1051  vi script.sh
+ 1052  ./script.sh
+ 1053  vi script.sh
+ 1054  ./script.sh
+ 1055  ls
+ 1056  vi script.sh
+ 1057  ./script.sh
+ 1058  ls
+ 1059  vi ws5.txt
+ 1060  cd 'United States'
+ 1061  ls
+ 1062  cat Comedy.txt
+ 1063  clear
+ 1064  ls
+ 1065  cd ..
+ 1066  history > cmds.log

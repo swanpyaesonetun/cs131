@@ -10,7 +10,7 @@ do
   output_file="United States/${category}.txt"
   
   # Write (redirect) the entries to the output file
-  grep "United States" "Global YouTube Statistics.csv" | grep "$category" > "$output_file"
+  awk -F',' '$8 == "United States" && $5 == "'$category'" {print}' "Global YouTube Statistics.csv" > "$output_file"
 done
 
 # Create or empty ws5.txt
@@ -23,7 +23,7 @@ do
   file="United States/${category}.txt"
   
   # Count the number of entries and append it to ws5.txt
-  echo "$category: $(wc -l < "$file")" >> ws5.txt
+  echo "$category: $(wc -l < "$file") entries" >> ws5.txt
 done
 
 #Display the script
